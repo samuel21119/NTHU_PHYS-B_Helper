@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body class="container">
+    <ul class="collapsible">
+      <li> <!-- Q1 -->
+        <div class="collapsible-header">Q. 1</div>
+        <div class="collapsible-body"><span>
+          <div class="question_text">
+            Barometric pressure in the eye of a hurricane is 
+            <div class="input-field inline">
+              <input id="q1_1" type="text">
+              <label for="text_inline">Input</label>
+            </div>
+            atm . How does the level of the ocean surface under the eye compare with the level under a distant fair-weather region where the pressure is
+            <div class="input-field inline">
+              <input id="q1_2" type="text">
+              <label for="text_inline">Input</label>
+            </div>
+            atm? Find the difference in sea levels in unit of meter. The answer is positive because the sea level is higher at low pressure region.<br>
+            (1 atm = $1.01×10^5$pa, density of sea water = 1000 kg/m$^3$, g = 9.8 m/s$^2$.)
+            <br><a class="waves-effect waves-light btn" onclick="q1()"><i class="material-icons left">calculate</i>Calc!</a>
+            <div class="collection"><a id="a1" class="collection-item"></a></div>
+          </div>
+        </span></div>
+      </li>
+    </ul>
+        
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('.collapsible');
+          var instances = M.Collapsible.init(elems, {});
+        });
+        const getNum = (id) => {return document.getElementById(id).value}
+        const q1 = () => {
+          
+        }
+    </script>
+  </body>
+</html>
+
+        
