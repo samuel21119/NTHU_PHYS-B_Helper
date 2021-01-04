@@ -17,7 +17,7 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     
-    <title>NTHU PHYS-B Helper (109) CH15</title>
+    <title>NTHU PHYS-B Helper (109) CH18</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-J0KPKKQD63"></script>
@@ -36,31 +36,31 @@
       <div class="nav-wrapper">
         <a href="../index.html" class="brand-logo left">NTHU PHYS-B Helper (109)</a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#">CH. 15</a></li>
+          <li><a href="#">CH. 18</a></li>
           <!-- Dropdown Trigger -->
           <li><a class="dropdown-trigger" id="dropdown-trigger" href="#!" data-target="dropdown1">Chapters<i class="material-icons right">arrow_drop_down</i></a></li>
         </ul>
       </div>
     </nav>
-    
+
     <div class="container">
       <ul class="collapsible">
         <li class="active"> <!-- Q1 -->
           <div class="collapsible-header">Question 1</div>
           <div class="collapsible-body"><span>
             <div class="question_text">
-              Barometric pressure in the eye of a hurricane is 
+              What should be the specific-heat ratio γ of an ideal gas consisting of
               <div class="input-field inline">
-                <input id="q1_1" type="text">
+                <input id="q1_1" type="text" oninput="document.getElementById('q1_1_2').innerText = document.getElementById('q1_1').value;">
                 <label for="text_inline">Input</label>
               </div>
-              atm . How does the level of the ocean surface under the eye compare with the level under a distant fair-weather region where the pressure is
+              % NO$_2$ (γ= 9/7),
               <div class="input-field inline">
-                <input id="q1_2" type="text">
+                <input id="q1_2" type="text" oninput="document.getElementById('q1_2_2').innerText = document.getElementById('q1_2').value;">
                 <label for="text_inline">Input</label>
               </div>
-              atm? Find the difference in sea levels in unit of meter. The answer is positive because the sea level is higher at low pressure region.<br>
-              (1 atm = $1.01×10^5$pa, density of sea water = 1000 kg/m$^3$, g = 9.8 m/s$^2$.)
+              % O$_2$ (γ= 7/5), and (100-<div id="q1_1_2" class="num"></div>-<div id="q1_2_2" class="num"></div>) % Ar (γ= 5/3)?<br>
+              (Note: the percent here is the number percentage, not the mass percentage.)
               <br><a class="waves-effect waves-light btn" onclick="q1()"><i class="material-icons left">calculate</i>Calc!</a>
               <div class="collection"><a id="a1" class="collection-item"></a></div>
             </div>
@@ -71,18 +71,12 @@
           <div class="collapsible-header">Question 2</div>
           <div class="collapsible-body"><span>
             <div class="question_text">
-              Dam breaks present a serious risk of widespread property damage and loss of life. You are asked to assess a
+              A gas sample undergoes the cyclic process ABCA shown in the figure, where AB lies on an isotherm. The pressure at A is
               <div class="input-field inline">
                 <input id="q2_1" type="text">
                 <label for="text_inline">Input</label>
               </div>
-              -m-wide dam holding back a lake
-              <div class="input-field inline">
-                <input id="q2_2" type="text">
-                <label for="text_inline">Input</label>
-              </div> 
-              m deep. The dam was built to withstand a force of water. What is the force (GN = $10^9$N) of the water exerts on the dam?<br>
-              (The water pressure is given by P = P$_0$+ ρgh, where P$_0$ is the atmospheric pressure = $1.01×10^5$N/m$^2$, and density of water = 1000 kg/m$^3$.)
+              kPa. Find the net work (J) done on the gas. (The answer is positive since we define the work is positive if the environment does +work to the system.)
               <br><a class="waves-effect waves-light btn" onclick="q2()"><i class="material-icons left">calculate</i>Calc!</a>
               <div class="collection"><a id="a2" class="collection-item"></a></div>
             </div>
@@ -93,17 +87,12 @@
           <div class="collapsible-header">Question 3</div>
           <div class="collapsible-body"><span>
             <div class="question_text">
-              Archimedes purportedly used his principle to verify that the king's crown was pure gold by weighing the crown submerged in water. Suppose the crown's actual weight was
+              An ideal gas with γ=
               <div class="input-field inline">
                 <input id="q3_1" type="text">
                 <label for="text_inline">Input</label>
               </div>
-              N. What would be its apparent weight (N) (measured when it is submerged in water) if it were made of
-              <div class="input-field inline">
-                <input id="q3_2" type="text" oninput="document.getElementById('q3_2_2').innerText = document.getElementById('q3_2').value;">
-                <label for="text_inline">Input</label>
-              </div>
-              % gold and (100-<div id="q3_2_2" class="num"></div>)% silver? The densities of gold and silver are 19.3 and 10.5 g/cm$^3$ respectively.
+              starts at point A in the figure, where its volume and pressure are 1.00 L and 250 kPa, respectively. It undergoes an adiabatic expansion that triples its volume, ending at B. It's then heated at constant volume to C, and compressed isothermally back to A. Find the work W$_{AB}$ (J) on the gas for the adiabatic segment. (The answer is negative since the gas actually does +work to the environment.)
               <br><a class="waves-effect waves-light btn" onclick="q3()"><i class="material-icons left">calculate</i>Calc!</a>
               <div class="collection"><a id="a3" class="collection-item"></a></div>
             </div>
@@ -114,22 +103,22 @@
           <div class="collapsible-header">Question 4</div>
           <div class="collapsible-body"><span>
             <div class="question_text">
-              You're a consultant for maple syrup producers. They tap maple trees and collect sap with plastic tubing that connects to a common pipe delivering sap to an evaporator. There it's boiled to produce thick, tasty syrup. The system can be modeled as a pipe with one end, of cross-sectional area A =
+              A 6-L ideal gas with γ =
               <div class="input-field inline">
                 <input id="q4_1" type="text">
                 <label for="text_inline">Input</label>
               </div>
-              m$^2$ , exposed to atmospheric pressure (h1 = 
+              is at
               <div class="input-field inline">
-                <input id="q4_2" type="text">
+                <input id="q4_2" type="text" oninput="document.getElementById('q4_2_2').innerText = document.getElementById('q4_2').value;">
                 <label for="text_inline">Input</label>
               </div>
-              m). The pipe drops through a vertical distance while its area decreases to half. A small vertical glass tube extends from the lower portion (h2 =
+              K and 100 kPa. The gas is compressed adiabatically until its volume becomes
               <div class="input-field inline">
                 <input id="q4_3" type="text">
                 <label for="text_inline">Input</label>
               </div>
-              m), and is open to atmospheric pressure. What's the volume flow rate (m$^3$/s) of the sap? g = 9.8 m/s$^2$.
+              L, then cooled at constant pressure back to <div id="q4_2_2" class="num"></div> K, and finally allowed to expand isothermally to its original state. What is the net work (J) done on the gas during one cycle?
               <br><a class="waves-effect waves-light btn" onclick="q4()"><i class="material-icons left">calculate</i>Calc!</a>
               <div class="collection"><a id="a4" class="collection-item"></a></div>
             </div>
@@ -140,32 +129,17 @@
           <div class="collapsible-header">Question 5</div>
           <div class="collapsible-body"><span>
             <div class="question_text">
-              A drinking straw
+              The curved path CA in the figure lies on the
               <div class="input-field inline">
                 <input id="q5_1" type="text">
                 <label for="text_inline">Input</label>
               </div>
-              cm long and
+              -K isotherm for an ideal gas with γ = 
               <div class="input-field inline">
                 <input id="q5_2" type="text">
                 <label for="text_inline">Input</label>
               </div>
-              mm in diameter stands vertically in a cup of juice
-              <div class="input-field inline">
-                <input id="q5_3" type="text">
-                <label for="text_inline">Input</label>
-              </div>
-              cm in diameter. A section of straw 
-              <div class="input-field inline">
-                <input id="q5_4" type="text">
-                <label for="text_inline">Input</label>
-              </div>
-              cm long extends above the juice. A child sucks on the straw, and the juice level begins dropping at
-              <div class="input-field inline">
-                <input id="q5_5" type="text">
-                <label for="text_inline">Input</label>
-              </div>
-              mm/s. How much smaller is the pressure in the child's mouth than the atmospheric pressure? (in Pa and the answer is a positive number) g = 9.8 m/s$^2$ and  the density of the juice is 1000 kg/m$^3$.
+              . The gas undergoes a cyclic path ABCA. How much heat (J) flows into the gas on the segment AB? 
               <br><a class="waves-effect waves-light btn" onclick="q5()"><i class="material-icons left">calculate</i>Calc!</a>
               <div class="collection"><a id="a5" class="collection-item"></a></div>
             </div>
@@ -176,17 +150,12 @@
           <div class="collapsible-header">Question 6</div>
           <div class="collapsible-body"><span>
             <div class="question_text">
-              The tube is mounted on the aircraft with opening A at right angles to the flow and opening B pointing into the flow. The gauge prevents airflow through the tube. Given that pressure at A (P$_A$ = 
+              A gas mixture contains monatomic argon and diatomic oxygen. An adiabatic expansion that doubles its volume results in the pressure dropping to
               <div class="input-field inline">
                 <input id="q6_1" type="text">
                 <label for="text_inline">Input</label>
               </div>
-              N/m$^2$) and pressure at B (P$_B$ = 
-              <div class="input-field inline">
-                <input id="q6_2" type="text">
-                <label for="text_inline">Input</label>
-              </div>
-              N/m$^2$), use Bernoulli's equation to calculate the speed of air flow (m/s) at A. (Density of air ρ = 1.2 kg/m$^3$)
+              of its original value. What fraction of the molecules are argon?
               <br><a class="waves-effect waves-light btn" onclick="q6()"><i class="material-icons left">calculate</i>Calc!</a>
               <div class="collection"><a id="a6" class="collection-item"></a></div>
             </div>
@@ -212,48 +181,44 @@
           var elems = document.querySelectorAll('.dropdown-trigger');
           var instances = M.Dropdown.init(elems, { hover: false });
         });
-        
+
         const getNum = (id) => {return Number(document.getElementById(id).value);}
         const setAns = (id, ans) => {document.getElementById(id).innerText = ans;}
 
         const q1 = () => {
           let a = getNum("q1_1");
           let b = getNum("q1_2");
-          setAns("a1", ((b-a)*1.01*10**5)/(1000*9.8));
+          setAns("a1", 1/(((a*7/2)+(b*5/2)+((100-a-b)*3/2))*0.01)+1);
         }
 
         const q2 = () => {
           let a = getNum("q2_1");
-          let b = getNum("q2_2");
-          setAns("a2", (a*(b*(0.5*1000*9.8*b+1.01*10**5)))/10**9);
+          setAns("a2", a*(5*Math.log(5)-4));
         }
 
         const q3 = () => {
           let a = getNum("q3_1");
-          let b = getNum("q3_2");
-          setAns("a3", (a*(1-1/(0.01*(b*19.3+(100-b)*10.5)))));
+          setAns("a3", 250*((3**(1-a)-1)/(a-1)));
         }
 
         const q4 = () => {
           let a = getNum("q4_1");
           let b = getNum("q4_2");
           let c = getNum("q4_3");
-          setAns("a4", a*Math.sqrt(2*9.8*(b-c)/3));
+          let pB = 100*(6/c)**a;
+          let vC = 600/pB;
+          setAns("a4", (100*6**a*((6**(1-a)-c**(1-a))/(1-a)))+((c-vC)*pB)-(600*Math.log(6/vC)));
         }
 
         const q5 = () => {
           let a = getNum("q5_1");
           let b = getNum("q5_2");
-          let c = getNum("q5_3");
-          let d = getNum("q5_4");
-          let e = getNum("q5_5");
-          setAns("a5", 1000*(9.8*d*0.01-0.5*(1-(c*10/b)**4)*(e*0.001)**2));
+          setAns("a5", 1000/(b-1));
         }
 
         const q6 = () => {
           let a = getNum("q6_1");
-          let b = getNum("q6_2");
-          setAns("a6", Math.sqrt((b-a)*2/1.2));
+          setAns("a6", (5-2/(Math.log(1/a)/Math.log(2)-1))/2);
         }
     </script>
   </body>
