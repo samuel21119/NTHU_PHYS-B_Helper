@@ -28,12 +28,7 @@
   </head>
 
   <body>
-    <ul id="dropdown1" class="dropdown-content">
-      <li><a href="ch15.html">CH. 15</a></li>
-      <li><a href="ch16.html">CH. 16</a></li>
-      <li><a href="ch17.html">CH. 17</a></li>
-      <li><a href="ch18.html">CH. 18</a></li>
-    </ul>
+    <ul id="dropdown1" class="dropdown-content"></ul>
     <nav>
       <div class="nav-wrapper">
         <a href="../index.html" class="brand-logo left">NTHU PHYS-B Helper (109)</a>
@@ -257,6 +252,7 @@
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
     </script>
+    <script type="text/javascript" src="ch.js"></script>
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function() {
           let elems = document.querySelectorAll('.collapsible');
@@ -266,7 +262,7 @@
           var elems = document.querySelectorAll('.dropdown-trigger');
           var instances = M.Dropdown.init(elems, { hover: false });
         });
-        
+
         const getNum = (id) => {return Number(document.getElementById(id).value);}
         const setAns = (id, ans) => {document.getElementById(id).innerText = ans;}
 

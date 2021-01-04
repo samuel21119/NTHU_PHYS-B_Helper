@@ -14,7 +14,7 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     
-    <title>NTHU PHYS-B Helper (109) CH15</title>
+    <title>NTHU PHYS-B Helper (109) CH17</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-J0KPKKQD63"></script>
@@ -33,31 +33,30 @@
       <div class="nav-wrapper">
         <a href="../index.html" class="brand-logo left">NTHU PHYS-B Helper (109)</a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#">CH. 15</a></li>
+          <li><a href="#">CH. 17</a></li>
           <!-- Dropdown Trigger -->
           <li><a class="dropdown-trigger" id="dropdown-trigger" href="#!" data-target="dropdown1">Chapters<i class="material-icons right">arrow_drop_down</i></a></li>
         </ul>
       </div>
     </nav>
-    
+
     <div class="container">
       <ul class="collapsible">
         <li class="active"> <!-- Q1 -->
           <div class="collapsible-header">Question 1</div>
           <div class="collapsible-body"><span>
             <div class="question_text">
-              Barometric pressure in the eye of a hurricane is 
+              A pressure of 10$^{-10}$pa is readily achievable with laboratory vacuum apparatus. If the residual air in this "vacuum" is at
               <div class="input-field inline">
                 <input id="q1_1" type="text">
                 <label for="text_inline">Input</label>
               </div>
-              atm . How does the level of the ocean surface under the eye compare with the level under a distant fair-weather region where the pressure is
+              ºC , how many air molecules are there in a volume of
               <div class="input-field inline">
                 <input id="q1_2" type="text">
                 <label for="text_inline">Input</label>
               </div>
-              atm? Find the difference in sea levels in unit of meter. The answer is positive because the sea level is higher at low pressure region.<br>
-              (1 atm = $1.01×10^5$pa, density of sea water = 1000 kg/m$^3$, g = 9.8 m/s$^2$.)
+              cm$^3$? Boltzmann's constant k = $1.38×10^{-23}$J/K.
               <br><a class="waves-effect waves-light btn" onclick="q1()"><i class="material-icons left">calculate</i>Calc!</a>
               <div class="collection"><a id="a1" class="collection-item"></a></div>
             </div>
@@ -68,18 +67,17 @@
           <div class="collapsible-header">Question 2</div>
           <div class="collapsible-body"><span>
             <div class="question_text">
-              Dam breaks present a serious risk of widespread property damage and loss of life. You are asked to assess a
+              A
               <div class="input-field inline">
                 <input id="q2_1" type="text">
                 <label for="text_inline">Input</label>
               </div>
-              -m-wide dam holding back a lake
+              -mL flask is initially open in a room containing air at 1 atm and
               <div class="input-field inline">
-                <input id="q2_2" type="text">
+                <input id="q2_2" type="text" oninput="document.getElementById('q2_2_2').innerText = document.getElementById('q2_2').value;">
                 <label for="text_inline">Input</label>
               </div> 
-              m deep. The dam was built to withstand a force of water. What is the force (GN = $10^9$N) of the water exerts on the dam?<br>
-              (The water pressure is given by P = P$_0$+ ρgh, where P$_0$ is the atmospheric pressure = $1.01×10^5$N/m$^2$, and density of water = 1000 kg/m$^3$.)
+              °C. The flask is then closed and immersed in boiling water (100°C). When the air in the flask has reached thermodynamic equilibrium, the flask is opened and air is allowed to escape. The flask is then closed and cooled back to <div id="q2_2_2" style="display: inline;"></div>°C. Find the final pressure (atm) in the flask.
               <br><a class="waves-effect waves-light btn" onclick="q2()"><i class="material-icons left">calculate</i>Calc!</a>
               <div class="collection"><a id="a2" class="collection-item"></a></div>
             </div>
@@ -90,17 +88,22 @@
           <div class="collapsible-header">Question 3</div>
           <div class="collapsible-body"><span>
             <div class="question_text">
-              Archimedes purportedly used his principle to verify that the king's crown was pure gold by weighing the crown submerged in water. Suppose the crown's actual weight was
+              During a nuclear accident,
               <div class="input-field inline">
                 <input id="q3_1" type="text">
                 <label for="text_inline">Input</label>
               </div>
-              N. What would be its apparent weight (N) (measured when it is submerged in water) if it were made of
+              m$^3$ of emergency cooling water at
               <div class="input-field inline">
-                <input id="q3_2" type="text" oninput="document.getElementById('q3_2_2').innerText = document.getElementById('q3_2').value;">
+                <input id="q3_2" type="text">
                 <label for="text_inline">Input</label>
               </div>
-              % gold and (100-<div id="q3_2_2" style="display: inline;"></div>)% silver? The densities of gold and silver are 19.3 and 10.5 g/cm$^3$ respectively.
+              ºC is injected into a reactor vessel where the reactor core is producing heat at a rate of
+              <div class="input-field inline">
+                <input id="q3_3" type="text">
+                <label for="text_inline">Input</label>
+              </div>
+              MW. If the water is allowed to boil at normal atmospheric pressure, how many second will it take to boil the reactor dry? The heat of vaporization of water is 2257 J/g and the density is 1000 kg/m$^3$.
               <br><a class="waves-effect waves-light btn" onclick="q3()"><i class="material-icons left">calculate</i>Calc!</a>
               <div class="collection"><a id="a3" class="collection-item"></a></div>
             </div>
@@ -111,22 +114,17 @@
           <div class="collapsible-header">Question 4</div>
           <div class="collapsible-body"><span>
             <div class="question_text">
-              You're a consultant for maple syrup producers. They tap maple trees and collect sap with plastic tubing that connects to a common pipe delivering sap to an evaporator. There it's boiled to produce thick, tasty syrup. The system can be modeled as a pipe with one end, of cross-sectional area A =
+              A glass marble
               <div class="input-field inline">
                 <input id="q4_1" type="text">
                 <label for="text_inline">Input</label>
               </div>
-              m$^2$ , exposed to atmospheric pressure (h1 = 
+              cm in diameter is to be dropped through a hole in a steel plate. At room temperature the hole diameter is
               <div class="input-field inline">
                 <input id="q4_2" type="text">
                 <label for="text_inline">Input</label>
               </div>
-              m). The pipe drops through a vertical distance while its area decreases to half. A small vertical glass tube extends from the lower portion (h2 =
-              <div class="input-field inline">
-                <input id="q4_3" type="text">
-                <label for="text_inline">Input</label>
-              </div>
-              m), and is open to atmospheric pressure. What's the volume flow rate (m$^3$/s) of the sap? g = 9.8 m/s$^2$.
+              cm. By how much must the plate's temperature be raised so the marble will fit through the hole? The coefficient of linear expansion α = $12\times 10^{-6}$ (K$^{-1}$) for steel.
               <br><a class="waves-effect waves-light btn" onclick="q4()"><i class="material-icons left">calculate</i>Calc!</a>
               <div class="collection"><a id="a4" class="collection-item"></a></div>
             </div>
@@ -137,32 +135,17 @@
           <div class="collapsible-header">Question 5</div>
           <div class="collapsible-body"><span>
             <div class="question_text">
-              A drinking straw
+              An aluminum rod of length L$_0$ =
               <div class="input-field inline">
                 <input id="q5_1" type="text">
                 <label for="text_inline">Input</label>
               </div>
-              cm long and
+              m is clamped rigidly at both ends. Its temperature increases by
               <div class="input-field inline">
                 <input id="q5_2" type="text">
                 <label for="text_inline">Input</label>
               </div>
-              mm in diameter stands vertically in a cup of juice
-              <div class="input-field inline">
-                <input id="q5_3" type="text">
-                <label for="text_inline">Input</label>
-              </div>
-              cm in diameter. A section of straw 
-              <div class="input-field inline">
-                <input id="q5_4" type="text">
-                <label for="text_inline">Input</label>
-              </div>
-              cm long extends above the juice. A child sucks on the straw, and the juice level begins dropping at
-              <div class="input-field inline">
-                <input id="q5_5" type="text">
-                <label for="text_inline">Input</label>
-              </div>
-              mm/s. How much smaller is the pressure in the child's mouth than the atmospheric pressure? (in Pa and the answer is a positive number) g = 9.8 m/s$^2$ and  the density of the juice is 1000 kg/m$^3$.
+              °C and in the ensuing expansion, it cracks to form two straight pieces. What is the length of d? (in cm) The coefficient of linear expansion of aluminum is $24 \times 10^{-6}$(K$^{-1}$).
               <br><a class="waves-effect waves-light btn" onclick="q5()"><i class="material-icons left">calculate</i>Calc!</a>
               <div class="collection"><a id="a5" class="collection-item"></a></div>
             </div>
@@ -173,17 +156,25 @@
           <div class="collapsible-header">Question 6</div>
           <div class="collapsible-body"><span>
             <div class="question_text">
-              The tube is mounted on the aircraft with opening A at right angles to the flow and opening B pointing into the flow. The gauge prevents airflow through the tube. Given that pressure at A (P$_A$ = 
+              At high gas density, the van der Waals equation modifies the ideal-gas law to account for nonzero molecular volume and for the van der Waals force. The van der Waals equation is
+              $$\left (p+\frac{n^2a}{V^2} \right ) \left (V-nb \right )=nRT$$
+              where a and b are constants. For nitrogen (N$_2$), a = 0.14 Pa‧m$^6$/mol$^2$ and b = $3.91‧10^{–5}$ m$^3$/mol. For
               <div class="input-field inline">
                 <input id="q6_1" type="text">
                 <label for="text_inline">Input</label>
               </div>
-              N/m$^2$) and pressure at B (P$_B$ = 
+              mol of N$_2$ at 
               <div class="input-field inline">
                 <input id="q6_2" type="text">
                 <label for="text_inline">Input</label>
               </div>
-              N/m$^2$), use Bernoulli's equation to calculate the speed of air flow (m/s) at A. (Density of air ρ = 1.2 kg/m$^3$)
+              atm pressure, confined to a volume of
+              <div class="input-field inline">
+                <input id="q6_3" type="text">
+                <label for="text_inline">Input</label>
+              </div>
+              L, find the temperature (K) predicted by the van der Waals equation.<br>
+              Note: 1 atm = $1.013×10^5$Pa. R = $8.314$ J/K‧mol.
               <br><a class="waves-effect waves-light btn" onclick="q6()"><i class="material-icons left">calculate</i>Calc!</a>
               <div class="collection"><a id="a6" class="collection-item"></a></div>
             </div>
@@ -209,48 +200,50 @@
           var elems = document.querySelectorAll('.dropdown-trigger');
           var instances = M.Dropdown.init(elems, { hover: false });
         });
-        
+
         const getNum = (id) => {return Number(document.getElementById(id).value);}
         const setAns = (id, ans) => {document.getElementById(id).innerText = ans;}
 
         const q1 = () => {
           let a = getNum("q1_1");
           let b = getNum("q1_2");
-          setAns("a1", ((b-a)*1.01*10**5)/(1000*9.8));
+          let KC = 273;
+          setAns("a1", 10**-10*(b*10**-6)/(1.38*10**-23*(KC+a)));
         }
 
         const q2 = () => {
-          let a = getNum("q2_1");
           let b = getNum("q2_2");
-          setAns("a2", (a*(b*(0.5*1000*9.8*b+1.01*10**5)))/10**9);
+          let KC = 273;
+          setAns("a2", (b+KC)/(100+KC));
         }
 
         const q3 = () => {
           let a = getNum("q3_1");
           let b = getNum("q3_2");
-          setAns("a3", (a*(1-1/(0.01*(b*19.3+(100-b)*10.5)))));
+          let c = getNum("q3_3");
+          setAns("a3", (a*1000)*(2257*1000+4184*(100-b))/(c*10**6));
         }
 
         const q4 = () => {
           let a = getNum("q4_1");
           let b = getNum("q4_2");
-          let c = getNum("q4_3");
-          setAns("a4", a*Math.sqrt(2*9.8*(b-c)/3));
+          setAns("a4", ((a/b)-1)/(12*10**-6));
         }
 
         const q5 = () => {
           let a = getNum("q5_1");
           let b = getNum("q5_2");
-          let c = getNum("q5_3");
-          let d = getNum("q5_4");
-          let e = getNum("q5_5");
-          setAns("a5", 1000*(9.8*d*0.01-0.5*(1-(c*10/b)**4)*(e*0.001)**2));
+          let l1 = a / 2;
+          setAns("a5", Math.sqrt((l1*(1+24*10**-6*b))**2-l1**2)*100);
         }
 
         const q6 = () => {
           let a = getNum("q6_1");
           let b = getNum("q6_2");
-          setAns("a6", Math.sqrt((b-a)*2/1.2));
+          let c = getNum("q6_3");
+          let p = b * 1.013*10**5;
+          let V = c * 10**-3;
+          setAns("a6", (p+(a**2*0.14)/(V**2))*(V-a*3.91*10**-5)/(a*8.314));
         }
     </script>
   </body>
