@@ -1,3 +1,7 @@
 .num {
     display: inline;
 }
+
+.hint {
+    pointer-events: none;
+}
