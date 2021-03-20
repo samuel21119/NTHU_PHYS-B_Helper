@@ -1,4 +1,4 @@
-const availableCh = [15, 16, 17, 18, 19];
+const availableCh = [15, 16, 17, 18, 19, 20, 21, 22];
 
 (() => {
   const chs = document.getElementById("chs");

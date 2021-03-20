@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Custom stylesheet-->
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+
+    <!--Import math.js-->
+    <!-- <script src="../js/math.js" type="text/javascript"></script> -->
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <title>NTHU PHYS-B Helper (109) CH21</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J0KPKKQD63"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-J0KPKKQD63');
+    </script>
+  </head>
+
+  <body>
+    <ul id="dropdown1" class="dropdown-content"></ul>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="../index.html" class="brand-logo left">NTHU PHYS-B Helper (109)</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">CH. 21</a></li>
+          <!-- Dropdown Trigger -->
+          <li><a class="dropdown-trigger" id="dropdown-trigger" href="#!" data-target="dropdown1">Chapters<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <ul class="collapsible">
+        <li class="active"> <!-- Q1 -->
+          <div class="collapsible-header">21.14</div>
+          <div class="collapsible-body"><span>
+            <div class="question_text">
+              A flat surface with area
+              <div class="input-field inline"><input id="q1_1" type="text"><label for="text_inline">Input</label></div>
+              $m^2$ lies in the x-y plane, in a uniform electric field E =
+              <div class="input-field inline"><input id="q1_2" type="text"><label for="text_inline">Input</label></div>
+              $\vec{i}+$
+              <div class="input-field inline"><input id="q1_3" type="text"><label for="text_inline">Input</label></div>
+              $\vec{j}+$
+              <div class="input-field inline"><input id="q1_4" type="text"><label for="text_inline">Input</label></div>
+              $\vec{k}$
+              N/C. Find the flux ($N\cdot m^2/C$) through the surface.
+              <br><a class="waves-effect waves-light btn" onclick="q1()"><i class="material-icons left">calculate</i>Calc!</a>
+              <a class="waves-effect waves-light btn" onclick="q1(1)"><i class="material-icons left">functions</i>equation</a>
+              <div class="collection"><a id="a1" class="collection-item"></a></div>
+            </div>
+          </span></div>
+        </li>
+
+        <li> <!-- Q2 -->
+          <div class="collapsible-header">21.20</div>
+          <div class="collapsible-body"><span>
+            <div class="question_text">
+              A
+              <div class="input-field inline"><input id="q2_1" type="text"><label for="text_inline">Input</label></div>
+              nC charge and a
+              <div class="input-field inline"><input id="q2_2" type="text"><label for="text_inline">Input</label></div>
+              nC charge are inside an uncharged sphere. What is the electric flux through the sphere? (in unit of $N\cdot m^2/C$) ($\pi=3.14$)
+              <br><a class="waves-effect waves-light btn" onclick="q2()"><i class="material-icons left">calculate</i>Calc!</a>
+              <a class="waves-effect waves-light btn" onclick="q2(1)"><i class="material-icons left">functions</i>equation</a>
+              <div class="collection"><a id="a2" class="collection-item"></a></div>
+            </div>
+          </span></div>
+        </li>
+
+        <li> <!-- Q3 -->
+          <div class="collapsible-header">21.24</div>
+          <div class="collapsible-body"><span>
+            <div class="question_text">
+              A
+              <div class="input-field inline"><input id="q3_1" type="text"><label for="text_inline">Input</label></div>
+              -nC point charge is at the center of a thin spherical shell of radius
+              <div class="input-field inline"><input id="q3_2" type="text"><label for="text_inline">Input</label></div>
+              cm, carrying
+              <div class="input-field inline"><input id="q3_3" type="text"><label for="text_inline">Input</label></div>
+              nC of charge distributed uniformly over its surface. Find the magnitude (in unit of kN/C) of the electric field at
+              <div class="input-field inline"><input id="q3_4" type="text"><label for="text_inline">Input</label></div>
+              cm from the point charge.
+              <br><a class="waves-effect waves-light btn" onclick="q3()"><i class="material-icons left">calculate</i>Calc!</a>
+              <a class="waves-effect waves-light btn" onclick="q3(1)"><i class="material-icons left">functions</i>equation</a>
+              <div class="collection"><a id="a3" class="collection-item"></a></div>
+            </div>
+          </span></div>
+        </li>
+
+        <li> <!-- Q4 -->
+          <div class="collapsible-header">21.32</div>
+          <div class="collapsible-body"><span>
+            <div class="question_text">
+              What is the electric field strength (N/C) just outside the surface of a conducting sphere carrying surface charge density
+              <div class="input-field inline"><input id="q4_1" type="text"><label for="text_inline">Input</label></div>
+              $nC/m^2$?
+              <br><a class="waves-effect waves-light btn" onclick="q4()"><i class="material-icons left">calculate</i>Calc!</a>
+              <a class="waves-effect waves-light btn" onclick="q4(1)"><i class="material-icons left">functions</i>equation</a>
+              <div class="collection"><a id="a4" class="collection-item"></a></div>
+            </div>
+          </span></div>
+        </li>
+
+        <li> <!-- Q5 -->
+          <div class="collapsible-header">21.44</div>
+          <div class="collapsible-body"><span>
+            <div class="question_text">
+              What is the flux ($N\cdot m^2/C$) through the hemispherical open surface of radius
+              <div class="input-field inline"><input id="q5_1" type="text"><label for="text_inline">Input</label></div>
+              m in a uniform electric field of
+              <div class="input-field inline"><input id="q5_2" type="text"><label for="text_inline">Input</label></div>
+              N/C as shown in the figure? (The direction of the electric field is along the axis of the hemisphere.)
+              <br><a class="waves-effect waves-light btn" onclick="q5()"><i class="material-icons left">calculate</i>Calc!</a>
+              <a class="waves-effect waves-light btn" onclick="q5(1)"><i class="material-icons left">functions</i>equation</a>
+              <div class="collection"><a id="a5" class="collection-item"></a></div>
+            </div>
+          </span></div>
+        </li>
+
+        <li> <!-- Q6 -->
+          <div class="collapsible-header">21.55</div>
+          <div class="collapsible-body"><span>
+            <div class="question_text">
+              A long, thin wire carrying
+              <div class="input-field inline"><input id="q6_1" type="text"><label for="text_inline">Input</label></div>
+              nC/m runs down the center of a long, thin-walled pipe with radius
+              <div class="input-field inline"><input id="q6_2" type="text"><label for="text_inline">Input</label></div>
+              cm carrying
+              <div class="input-field inline"><input id="q6_3" type="text"><label for="text_inline">Input</label></div>
+              nC/m spread uniformly over its surface. Find the magnitude of the electric field
+              <div class="input-field inline"><input id="q6_4" type="text"><label for="text_inline">Input</label></div>
+              cm from the wire. (in unit of N/C)
+              <br><a class="waves-effect waves-light btn" onclick="q6()"><i class="material-icons left">calculate</i>Calc!</a>
+              <a class="waves-effect waves-light btn" onclick="q6(1)"><i class="material-icons left">functions</i>equation</a>
+              <div class="collection"><a id="a6" class="collection-item"></a></div>
+            </div>
+          </span></div>
+        </li>
+      </ul>
+    </div>
+    
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" src="ch.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+          let elems = document.querySelectorAll('.collapsible');
+          let instances = M.Collapsible.init(elems, {});
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('.dropdown-trigger');
+          var instances = M.Dropdown.init(elems, { hover: false });
+        });
+
+        const getNum = (id) => {return Number(document.getElementById(id).value);}
+        const setAns = (id, ans) => {document.getElementById(id).innerText = ans;}
+        
+        const _K = 9*10**9;
+        const _C = 1.6*10**-19;
+        const _EP0 = 1/(4*3.14*_K);
+
+        const q1 = (eq) => {
+          let a = getNum("q1_1");
+          let b = getNum("q1_2");
+          let c = getNum("q1_3");
+          let d = getNum("q1_4");
+          let ans = "a*d";
+          setAns("a1", eq ? ans : eval(ans));
+        }
+
+        const q2 = (eq) => {
+          let a = getNum("q2_1");
+          let b = getNum("q2_2");
+          let ans = "_K*(a+b)*4*3.14*10**-9";
+          setAns("a2", eq ? ans : eval(ans));
+        }
+
+        const q3 = (eq) => {
+          let a = getNum("q3_1");
+          let b = getNum("q3_2");
+          let c = getNum("q3_3");
+          let d = getNum("q3_4");
+          let ans = "(_K*a*10**-9)/(d*10**-2)**2/1000";
+          setAns("a3", eq ? ans : eval(ans));
+        }
+
+        const q4 = (eq) => {
+          let a = getNum("q4_1");
+          let ans = "(a*10**-9)/_EP0";
+          setAns("a4", eq ? ans : eval(ans));
+        }
+
+        const q5 = (eq) => {
+          let a = getNum("q5_1");
+          let b = getNum("q5_2");
+          let ans = "a**2*3.14*b"
+          setAns("a6", eq ? ans : eval(ans));
+        }
+
+        const q6 = (eq) => {
+          let a = getNum("q6_1");
+          let d = getNum("q6_4");
+          let ans = "(a*10**-9)/((d*10**-2)*(2*3.14*_EP0))";
+          setAns("a6", eq ? ans : eval(ans));
+        }
+    </script>
+  </body>
+</html>
+
+        

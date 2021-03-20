@@ -5,3 +5,13 @@
 .hint {
     pointer-events: none;
 }
+
+img {
+    width: 50%;
+    display: block;
+}
+
+.redd {
+    color: red;
+    background-color: transparent;
+}
