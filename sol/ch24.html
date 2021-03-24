@@ -89,7 +89,9 @@
               <div class="input-field inline"><input id="q3_1" type="text"><label for="text_inline">Input</label></div>
               mA current flows through a copper wire
               <div class="input-field inline"><input id="q3_2" type="text"><label for="text_inline">Input</label></div>
-              mm in diameter, the density of conduction electrons in copper is $6.2\cdot 10^{29}/m^3$. Find the drift speed in the copper wire. (in unit of mm/s)
+              mm in diameter, the density of conduction electrons in copper is 
+			  <div class="input-field inline"><input id="q3_3" type="text"><label for="text_inline">Input</label></div>
+			  $\cdot 10^{29}/m^3$. Find the drift speed in the copper wire. (in unit of mm/s)
               <img src="./img/24.46.png">
               <br><a class="waves-effect waves-light btn" onclick="q3()"><i class="material-icons left">calculate</i>Calc!</a>
               <a class="waves-effect waves-light btn" onclick="q3(1)"><i class="material-icons left">functions</i>equation</a>
@@ -199,7 +201,8 @@
         const q3 = (eq) => {
           let a = getNum("q3_1");
           let b = getNum("q3_2");
-          let ans = "(a*10**-3)/(6.2*10**29 * 3.14*(b/2*10**-3)**2 * _C)*1000"
+		  let c = getNum("q3_3");
+          let ans = "(a*10**-3)/(c*10**29 * 3.14*(b/2*10**-3)**2 * _C)*1000"
           setAns("a3", eq ? ans : eval(ans));
         }
 
