@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Custom stylesheet-->
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+
+    <!--Import math.js-->
+    <!-- <script src="../js/math.js" type="text/javascript"></script> -->
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <title>NTHU PHYS-B Helper (109) CH26</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J0KPKKQD63"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-J0KPKKQD63');
+    </script>
+  </head>
+
+  <body>
+    <ul id="dropdown1" class="dropdown-content"></ul>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="../index.html" class="brand-logo left">NTHU PHYS-B Helper (109)</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">CH. 26</a></li>
+          <!-- Dropdown Trigger -->
+          <li><a class="dropdown-trigger" id="dropdown-trigger" href="#!" data-target="dropdown1">Chapters<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <ul class="collapsible">
+        <li class="active"> <!-- Q1 -->
+          <div class="collapsible-header">26.24</div>
+          <div class="collapsible-body"><span>
+            <div class="question_text">
+              A wire with mass per unit length
+              <div class="input-field inline"><input id="q1_1" type="text"><label for="text_inline">Input</label></div>
+              g/m runs horizontally at right angles to a horizontal magnetic field. A
+              <div class="input-field inline"><input id="q1_2" type="text"><label for="text_inline">Input</label></div>
+              A current in the wire results in its being suspended against gravity ( Take $g = 9.8 m/s^2$ ). What's the magnetic field strength? (in unit mT)
+              <br><a class="waves-effect waves-light btn" onclick="q1()"><i class="material-icons left">calculate</i>Calc!</a>
+              <a class="waves-effect waves-light btn" onclick="q1(1)"><i class="material-icons left">functions</i>equation</a>
+              <div class="collection"><a id="a1" class="collection-item"></a></div>
+            </div>
+          </span></div>
+        </li>
+
+        <li> <!-- Q2 -->
+          <div class="collapsible-header">26.27</div>
+          <div class="collapsible-body"><span>
+            <div class="question_text">
+              A
+              <div class="input-field inline"><input id="q2_1" type="text"><label for="text_inline">Input</label></div>
+              -m-long wire carrying
+              <div class="input-field inline"><input id="q2_2" type="text"><label for="text_inline">Input</label></div>
+              A is wound into a tight coil
+			        <div class="input-field inline"><input id="q2_3" type="text"><label for="text_inline">Input</label></div>
+              cm in diameter. Find the magnetic field at its center. (In unit mT) ($μ_0 = 4 \pi \cdot 10^{-7} V*s/(A*m)$)
+              <br><a class="waves-effect waves-light btn" onclick="q2()"><i class="material-icons left">calculate</i>Calc!</a>
+              <a class="waves-effect waves-light btn" onclick="q2(1)"><i class="material-icons left">functions</i>equation</a>
+              <div class="collection"><a id="a2" class="collection-item"></a></div>
+            </div>
+          </span></div>
+        </li>
+
+        <li> <!-- Q3 -->
+          <div class="collapsible-header">26.45</div>
+          <div class="collapsible-body"><span>
+            <div class="question_text">
+              A coaxial cable like the one described in the preceding problem and shown in figure has a = 
+              <div class="input-field inline"><input id="q3_1" type="text"><label for="text_inline">Input</label></div>
+              mm, b =
+              <div class="input-field inline"><input id="q3_2" type="text"><label for="text_inline">Input</label></div>
+              cm, and c =
+			        <div class="input-field inline"><input id="q3_3" type="text"><label for="text_inline">Input</label></div>
+              mm. The magnetic field strength at r = 
+			        <div class="input-field inline"><input id="q3_4" type="text"><label for="text_inline">Input</label></div>
+              cm from the central axis is
+			        <div class="input-field inline"><input id="q3_5" type="text"><label for="text_inline">Input</label></div>
+              μT. Find the current I. (in unit A)
+              <img src="./img/26.45.png" style="width: 30%;">
+              <br><a class="waves-effect waves-light btn" onclick="q3()"><i class="material-icons left">calculate</i>Calc!</a>
+              <a class="waves-effect waves-light btn" onclick="q3(1)"><i class="material-icons left">functions</i>equation</a>
+              <div class="collection"><a id="a3" class="collection-item"></a></div>
+            </div>
+          </span></div>
+        </li>
+
+        <li> <!-- Q4 -->
+          <div class="collapsible-header">26.48</div>
+          <div class="collapsible-body"><span>
+            <div class="question_text">
+              A proton moving with velocity $\vec{v_1}$
+              <div class="input-field inline"><input id="q4_1" type="text"><label for="text_inline">Input</label></div>
+              $×10^4 \hat{j}$ m/s experiences a magnetic force of
+              <div class="input-field inline"><input id="q4_2" type="text"><label for="text_inline">Input</label></div>
+              $×10^{-16} \hat{i}$ N. A second proton moving on the x-axis experiences a magnetic force of
+              <div class="input-field inline"><input id="q4_3" type="text"><label for="text_inline">Input</label></div>
+              $×10^{-16} \hat{j}$ Find the magnitude of the magnetic field (assumed uniform). (in unit T)
+              <br><a class="waves-effect waves-light btn" onclick="q4()"><i class="material-icons left">calculate</i>Calc!</a>
+              <a class="waves-effect waves-light btn" onclick="q4(1)"><i class="material-icons left">functions</i>equation</a>
+              <div class="collection"><a id="a4" class="collection-item"></a></div>
+            </div>
+          </span></div>
+        </li>
+
+        <li> <!-- Q5 -->
+          <div class="collapsible-header">26.76</div>
+          <div class="collapsible-body"><span>
+            <div class="question_text">
+              A long, hollow conducting pipe of radius R =
+              <div class="input-field inline"><input id="q5_1" type="text"><label for="text_inline">Input</label></div>
+              cm and length L =
+              <div class="input-field inline"><input id="q5_2" type="text"><label for="text_inline">Input</label></div>
+              cm carries a uniform current I =
+              <div class="input-field inline"><input id="q5_3" type="text"><label for="text_inline">Input</label></div>
+              A flowing around the pipe. Find the magnitude of the magnetic field inside the pipe. (in unit mT) You can assume the length L is much larger than the radius R.
+              <img src="./img/26.76.png" style="width: 30%;">
+              <br><a class="waves-effect waves-light btn" onclick="q5()"><i class="material-icons left">calculate</i>Calc!</a>
+              <a class="waves-effect waves-light btn" onclick="q5(1)"><i class="material-icons left">functions</i>equation</a>
+              <div class="collection"><a id="a5" class="collection-item"></a></div>
+            </div>
+          </span></div>
+        </li>
+
+        <li> <!-- Q6 -->
+          <div class="collapsible-header">26.80</div>
+          <div class="collapsible-body"><span>
+            <div class="question_text">
+              The structure shown in the figure is made from conducting rods. The upper horizontal rod (mass =
+              <div class="input-field inline"><input id="q6_1" type="text"><label for="text_inline">Input</label></div>
+              g, length =
+              <div class="input-field inline"><input id="q6_2" type="text"><label for="text_inline">Input</label></div>
+              cm) is free to slide vertically on the uprights while maintaining electrical contact. A battery connecting across the insulating gap at the bottom of the left-hand upright drives
+              <div class="input-field inline"><input id="q6_3" type="text"><label for="text_inline">Input</label></div>
+              A of current through the structure. At what height h (in mm) will the upper rod be in equilibrium?
+              <img src="./img/26.80.jpg" style="width: 30%;">
+              <br><a class="waves-effect waves-light btn" onclick="q6()"><i class="material-icons left">calculate</i>Calc!</a>
+              <a class="waves-effect waves-light btn" onclick="q6(1)"><i class="material-icons left">functions</i>equation</a>
+              <div class="collection"><a id="a6" class="collection-item"></a></div>
+            </div>
+          </span></div>
+        </li>
+      </ul>
+    </div>
+    
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" src="ch.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+          let elems = document.querySelectorAll('.collapsible');
+          let instances = M.Collapsible.init(elems, {});
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('.dropdown-trigger');
+          var instances = M.Dropdown.init(elems, { hover: false });
+        });
+
+        const getNum = (id) => {return Number(document.getElementById(id).value);}
+        const setAns = (id, ans) => {document.getElementById(id).innerText = ans;}
+        
+        const q1 = (eq) => {
+          let a = getNum("q1_1");
+          let b = getNum("q1_2");
+          let ans = "9.8*a / b"
+          setAns("a1", eq ? ans : eval(ans));
+        }
+
+        const q2 = (eq) => {
+          let a = getNum("q2_1");
+          let b = getNum("q2_2");
+          let c = getNum("q2_3");
+          let ans = "a * (10**-7 * b / (c * 0.01 / 2) ** 2) * 1000"
+          setAns("a2", eq ? ans : eval(ans));
+        }
+
+        const q3 = (eq) => {
+          let d = getNum("q3_4");
+          let e = getNum("q3_5");
+          let ans = "(e * 10**-6 * 2*3.14*(d*0.01)) / (4*3.14*10**-7)"
+          setAns("a3", eq ? ans : eval(ans));
+        }
+
+        const q4 = (eq) => {
+          let a = getNum("q4_1");
+          let b = getNum("q4_2");
+          let ans = "(b * 10**-16) / (1.6*10**-19 * a*10**4)";
+          setAns("a4", eq ? ans : eval(ans));
+        }
+
+        const q5 = (eq) => {
+          let a = getNum("q5_1");
+          let b = getNum("q5_2");
+          let c = getNum("q5_3");
+          let ans = "(4*3.14*10**-7 * c) / (b * 0.01) * 1000";
+          setAns("a5", eq ? ans : eval(ans));
+        }
+
+        const q6 = (eq) => {
+          let a = getNum("q6_1");
+          let b = getNum("q6_2");
+          let c = getNum("q6_3");
+          let ans = "(c**2 * (b * 0.01) * (4 * 3.14 * 10**-7)) / (2 * 3.14 * (a * 0.001) * 9.8) * 1000";
+          setAns("a6", eq ? ans : eval(ans));
+        }
+    </script>
+  </body>
+</html>
+
+        

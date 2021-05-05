@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Custom stylesheet-->
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+
+    <!--Import math.js-->
+    <!-- <script src="../js/math.js" type="text/javascript"></script> -->
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <title>NTHU PHYS-B Helper (109) CH25</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J0KPKKQD63"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-J0KPKKQD63');
+    </script>
+  </head>
+
+  <body>
+    <ul id="dropdown1" class="dropdown-content"></ul>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="../index.html" class="brand-logo left">NTHU PHYS-B Helper (109)</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">CH. 25</a></li>
+          <!-- Dropdown Trigger -->
+          <li><a class="dropdown-trigger" id="dropdown-trigger" href="#!" data-target="dropdown1">Chapters<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <ul class="collapsible">
+        <li class="active"> <!-- Q1 -->
+          <div class="collapsible-header">25.27</div>
+          <div class="collapsible-body"><span>
+            <div class="question_text">
+              An ammeter with
+              <div class="input-field inline"><input id="q1_1" type="text"><label for="text_inline">Input</label></div>
+              Ω resistance is inserted in the circuit of figure. V1 =
+              <div class="input-field inline"><input id="q1_2" type="text"><label for="text_inline">Input</label></div>
+              V, R1 = 
+              <div class="input-field inline"><input id="q1_3" type="text"><label for="text_inline">Input</label></div>
+              kΩ, R2 =
+              <div class="input-field inline"><input id="q1_4" type="text"><label for="text_inline">Input</label></div>
+              kΩ. By what percentage is the measured current in error because of the nonzero meter resistance? (The percentage in error is defined as $100 \% \cdot \frac{I_{measured}-I_{actual}}{I_{actual}}$. So the answer is negative.)
+              <br><a class="waves-effect waves-light btn" onclick="q1()"><i class="material-icons left">calculate</i>Calc!</a>
+              <a class="waves-effect waves-light btn" onclick="q1(1)"><i class="material-icons left">functions</i>equation</a>
+              <div class="collection"><a id="a1" class="collection-item"></a></div>
+            </div>
+          </span></div>
+        </li>
+
+        <li> <!-- Q2 -->
+          <div class="collapsible-header">25.32</div>
+          <div class="collapsible-body"><span>
+            <div class="question_text">
+              An uncharged
+              <div class="input-field inline"><input id="q2_1" type="text"><label for="text_inline">Input</label></div>
+              -μF capacitor and a
+              <div class="input-field inline"><input id="q2_2" type="text"><label for="text_inline">Input</label></div>
+              -kΩ resistor are in series, and
+			        <div class="input-field inline"><input id="q2_3" type="text"><label for="text_inline">Input</label></div>
+              V is applied across the combination. How long (second) does it take the capacitor voltage to reach
+			        <div class="input-field inline"><input id="q2_4" type="text"><label for="text_inline">Input</label></div>
+              V??
+              <br><a class="waves-effect waves-light btn" onclick="q2()"><i class="material-icons left">calculate</i>Calc!</a>
+              <a class="waves-effect waves-light btn" onclick="q2(1)"><i class="material-icons left">functions</i>equation</a>
+              <div class="collection"><a id="a2" class="collection-item"></a></div>
+            </div>
+          </span></div>
+        </li>
+
+        <li> <!-- Q3 -->
+          <div class="collapsible-header">25.61</div>
+          <div class="collapsible-body"><span>
+            <div class="question_text">
+              In figure, take ε =
+              <div class="input-field inline"><input id="q3_1" type="text"><label for="text_inline">Input</label></div>
+              V, $R_1$=
+              <div class="input-field inline"><input id="q3_2" type="text"><label for="text_inline">Input</label></div>
+              kΩ, and $R_2$ =
+			        <div class="input-field inline"><input id="q3_3" type="text"><label for="text_inline">Input</label></div>
+              kΩ, and assume the capacitor is initially uncharged. Find the current in $R_1$ just after the switch is closed. (in unit of mA)
+              <br><a class="waves-effect waves-light btn" onclick="q3()"><i class="material-icons left">calculate</i>Calc!</a>
+              <a class="waves-effect waves-light btn" onclick="q3(1)"><i class="material-icons left">functions</i>equation</a>
+              <div class="collection"><a id="a3" class="collection-item"></a></div>
+            </div>
+          </span></div>
+        </li>
+
+        <li> <!-- Q4 -->
+          <div class="collapsible-header">25.73</div>
+          <div class="collapsible-body"><span>
+            <div class="question_text">
+              Find the equivalent resistance between A and B for the circuits in figure (in unit Ω). $R_1=$
+              <div class="input-field inline"><input id="q4_1" type="text"><label for="text_inline">Input</label></div>
+              Ω.
+              <img src="./img/25.73.png" style="width: 30%;">
+              <br><a class="waves-effect waves-light btn" onclick="q4()"><i class="material-icons left">calculate</i>Calc!</a>
+              <a class="waves-effect waves-light btn" onclick="q4(1)"><i class="material-icons left">functions</i>equation</a>
+              <div class="collection"><a id="a4" class="collection-item"></a></div>
+            </div>
+          </span></div>
+        </li>
+
+        <li> <!-- Q5 -->
+          <div class="collapsible-header">25.79</div>
+          <div class="collapsible-body"><span>
+            <div class="question_text">
+              An electrochemical impulse traveling alone the cell modeled in figure, change the value of $\epsilon _3$ so it supplies a
+              <div class="input-field inline"><input id="q5_1" type="text"><label for="text_inline">Input</label></div>
+              nA upward current. All resistors have the same value R =
+              <div class="input-field inline"><input id="q5_2" type="text"><label for="text_inline">Input</label></div>
+              MΩ, and the emfs are $\epsilon _1 =$
+              <div class="input-field inline"><input id="q5_3" type="text"><label for="text_inline">Input</label></div>
+              mV, $\epsilon _2 =$
+              <div class="input-field inline"><input id="q5_4" type="text"><label for="text_inline">Input</label></div>
+              mV. What's the value of  $\epsilon _3$ (in unit mV)?
+              <img src="./img/25.79.png" style="width: 30%;">
+              <br><a class="waves-effect waves-light btn" onclick="q5()"><i class="material-icons left">calculate</i>Calc!</a>
+              <a class="waves-effect waves-light btn" onclick="q5(1)"><i class="material-icons left">functions</i>equation</a>
+              <div class="collection"><a id="a5" class="collection-item"></a></div>
+            </div>
+          </span></div>
+        </li>
+
+        <li> <!-- Q6 -->
+          <div class="collapsible-header">25.83</div>
+          <div class="collapsible-body"><span>
+            <div class="question_text">
+              In the circuit of figure, the switch is initially open and the capacitor is uncharged. ε
+              <div class="input-field inline"><input id="q6_1" type="text"><label for="text_inline">Input</label></div>
+              V, R =
+              <div class="input-field inline"><input id="q6_2" type="text"><label for="text_inline">Input</label></div>
+              Ω. Find expression for the current I supplied by the battery just after the switch is closed (in unit A).
+              <img src="./img/25.83.png" style="width: 30%;">
+              <br><a class="waves-effect waves-light btn" onclick="q6()"><i class="material-icons left">calculate</i>Calc!</a>
+              <a class="waves-effect waves-light btn" onclick="q6(1)"><i class="material-icons left">functions</i>equation</a>
+              <div class="collection"><a id="a6" class="collection-item"></a></div>
+            </div>
+          </span></div>
+        </li>
+      </ul>
+    </div>
+    
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" src="ch.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+          let elems = document.querySelectorAll('.collapsible');
+          let instances = M.Collapsible.init(elems, {});
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('.dropdown-trigger');
+          var instances = M.Dropdown.init(elems, { hover: false });
+        });
+
+        const getNum = (id) => {return Number(document.getElementById(id).value);}
+        const setAns = (id, ans) => {document.getElementById(id).innerText = ans;}
+        
+        const q1 = (eq) => {
+          let a = getNum("q1_1");
+          let b = getNum("q1_2");
+          let c = getNum("q1_3");
+          let d = getNum("q1_4");
+          let ans = "((c+d)/(c+d+a*0.001)-1)*100"
+          setAns("a1", eq ? ans : eval(ans));
+        }
+
+        const q2 = (eq) => {
+          let a = getNum("q2_1");
+          let b = getNum("q2_2");
+          let c = getNum("q2_3");
+          let d = getNum("q2_4");
+          let ans = "(Math.log(a * 10**-6 * c) - Math.log(a*10**-6 * (c-d))) * (a*b * 10**-3)";
+          setAns("a2", eq ? ans : eval(ans));
+        }
+
+        const q3 = (eq) => {
+          let a = getNum("q3_1");
+          let b = getNum("q3_2");
+          let ans = "a/b"
+          setAns("a3", eq ? ans : eval(ans));
+        }
+
+        const q4 = (eq) => {
+          let a = getNum("q4_1");
+          let ans = "a";
+          setAns("a4", eq ? ans : eval(ans));
+        }
+
+        const q5 = (eq) => {
+          let a = getNum("q5_1");
+          let b = getNum("q5_2");
+          let c = getNum("q5_3");
+          let d = getNum("q5_4");
+          let ans = "8/3 * (a*10**-9 * b*10**6) * 1000 + 1/3 * (2*d + c)";
+          setAns("a5", eq ? ans : eval(ans));
+        }
+
+        const q6 = (eq) => {
+          let a = getNum("q6_1");
+          let b = getNum("q6_2");
+          let ans = "a / (4/3 * b)";
+          setAns("a6", eq ? ans : eval(ans));
+        }
+    </script>
+  </body>
+</html>
+
+        
