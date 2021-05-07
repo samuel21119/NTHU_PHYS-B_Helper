@@ -15,3 +15,5 @@ Current available chapter:
 - CH. 24
 - CH. 25
 - CH. 26
+- CH. 27
+- CH. 28

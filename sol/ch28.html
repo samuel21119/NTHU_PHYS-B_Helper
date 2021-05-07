@@ -200,8 +200,7 @@
         const q4 = (eq) => {
           let a = getNum("q4_1");
           let b = getNum("q4_2");
-          let c = getNum("q4_3");
-          let ans = "-((c * 0.001) * Math.log(1 - a*0.01)) / (b * 10**-6)"
+          let ans = "b / a"
           setAns("a4", eq ? ans : eval(ans));
         }
 
@@ -210,17 +209,14 @@
           let b = getNum("q5_2");
           let c = getNum("q5_3");
           let d = getNum("q5_4");
-          let e = getNum("q5_5");
-          let ans = "(2*c*e * a) / b"
+          let ans = "((d * 0.001) / (2*3.14 * c*1000 * b) - (a * 10**-9)) * 10**9"
           setAns("a5", eq ? ans : eval(ans));
         }
 
         const q6 = (eq) => {
           let a = getNum("q6_1");
           let b = getNum("q6_2");
-          let c = getNum("q6_3");
-          let d = getNum("q6_4");
-          let ans = "a / (1/(1/c + 1/d) + b) * (c / (c + d))"
+          let ans = "b / (Math.sqrt(1 + (Math.sqrt(1 - a**2) / a)**2))"
           setAns("a6", eq ? ans : eval(ans));
         }
     </script>
