@@ -1,0 +1,17 @@
+{
+  "name": "NTHU Physics Helper",
+  "short_name": "Physics Helper",
+  "description": "Protect your GPA",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "index.html",
+  "display": "standalone",
+  "theme_color": "#EE6E73",
+  "background_color": "#EE6E73"
+}
+  
