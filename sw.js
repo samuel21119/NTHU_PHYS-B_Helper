@@ -22,6 +22,8 @@ const cacheFiles = [
   "./sol/ch26.html",
   "./sol/ch27.html",
   "./sol/ch28.html",
+  "./sol/ch33.html",
+  "./sol/ch34.html",
   "./sol/img/20.48.jpg",
   "./sol/img/22-52.jpg",
   "./sol/img/23.13.jpg",
@@ -36,6 +38,7 @@ const cacheFiles = [
   "./sol/img/26.76.png",
   "./sol/img/26.80.jpg",
   "./sol/img/27.61.png",
+  "./sol/img/29.14.jpg"
 ]
 
 self.addEventListener('install', e => {
