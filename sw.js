@@ -22,6 +22,7 @@ const cacheFiles = [
   "./sol/ch26.html",
   "./sol/ch27.html",
   "./sol/ch28.html",
+  "./sol/ch29.html",
   "./sol/ch33.html",
   "./sol/ch34.html",
   "./sol/img/20.48.jpg",
