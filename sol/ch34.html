@@ -196,7 +196,8 @@
           let b = getNum("q6_2");
           let deltaLambda = h / (0.511 / C) * (1 - Math.cos(a/360 * 2*Math.PI));
           let ans = (h * C) / ((-deltaLambda + Math.sqrt(deltaLambda ** 2 + 4 * deltaLambda * h * C / ((b-1) * 0.511))) / 2);
-          setAns("a6", eq ? ans : ans);
+          let equation = "deltaLambda = h / (0.511 / C) * (1 - Math.cos(a/360 * 2*Math.PI)) \nans = (h * C) / ((-deltaLambda + Math.sqrt(deltaLambda ** 2 + 4 * deltaLambda * h * C / ((b-1) * 0.511))) / 2)"
+          setAns("a6", eq ? equation : ans);
         }
     </script>
   </body>
