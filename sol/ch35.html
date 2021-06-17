@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Custom stylesheet-->
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+
+    <!--Import math.js-->
+    <!-- <script src="../js/math.js" type="text/javascript"></script> -->
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <title>NTHU PHYS-B Helper (109) CH35</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J0KPKKQD63"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-J0KPKKQD63');
+    </script>
+  </head>
+
+  <body>
+    <ul id="dropdown1" class="dropdown-content"></ul>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="../index.html" class="brand-logo left">NTHU PHYS-B Helper (109)</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">CH. 35</a></li>
+          <!-- Dropdown Trigger -->
+          <li><a class="dropdown-trigger" id="dropdown-trigger" href="#!" data-target="dropdown1">Chapters<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <ul class="collapsible">
+        <li class="active"> <!-- Q1 -->
+          <div class="collapsible-header">35.11</div>
+          <div class="collapsible-body"><span>
+            <div class="question_text">
+              A particle's wave function is $\psi = Ae^{-\frac{(x-x_0)^2}{a^2}}$ ,where A =
+              <div class="input-field inline"><input id="q1_1" type="text"><label for="text_inline">Input</label></div>
+              , a = 
+              <div class="input-field inline"><input id="q1_2" type="text"><label for="text_inline">Input</label></div>
+              , x0 = 
+              <div class="input-field inline"><input id="q1_3" type="text"><label for="text_inline">Input</label></div>
+              . Where is the particle most likely to be found?
+              <br><a class="waves-effect waves-light btn" onclick="q1()"><i class="material-icons left">calculate</i>Calc!</a>
+              <a class="waves-effect waves-light btn" onclick="q1(1)"><i class="material-icons left">functions</i>equation</a>
+              <div class="collection"><a id="a1" class="collection-item"></a></div>
+            </div>
+          </span></div>
+        </li>
+
+        <li> <!-- Q2 -->
+          <div class="collapsible-header">35.17</div>
+          <div class="collapsible-body"><span>
+            <div class="question_text">
+              A carbon nanotube traps an electron in a hollow cylindrical structure
+              <div class="input-field inline"><input id="q2_1" type="text"><label for="text_inline">Input</label></div>
+              nm in diameter. Approximating the nanotube as a one-dimensional infinite square well, find the energy of the ground state. <span class="redd">(in unit eV)</span> <br>
+              Planck constant h = $6.626 \times 10^{-34}$ (J·s)<br>
+              Electron mass $m_e = 9.11 \times 10^{-31}$ (kg)<br>
+              Electron charge e = $1.6 \times 10^{-19}$ (C)
+              <br><a class="waves-effect waves-light btn" onclick="q2()"><i class="material-icons left">calculate</i>Calc!</a>
+              <a class="waves-effect waves-light btn" onclick="q2(1)"><i class="material-icons left">functions</i>equation</a>
+              <div class="collection"><a id="a2" class="collection-item"></a></div>
+            </div>
+          </span></div>
+        </li>
+
+        <li> <!-- Q3 -->
+          <div class="collapsible-header">35.18</div>
+          <div class="collapsible-body"><span>
+            <div class="question_text">
+              The reason we never see quantum effect in everyday life is that the Planck constant is too small. Treating yourself as a particle (mass
+              <div class="input-field inline"><input id="q3_1" type="text"><label for="text_inline">Input</label></div>
+              kg) in a room-sized one dimensional infinite square well (width
+              <div class="input-field inline"><input id="q3_2" type="text"><label for="text_inline">Input</label></div>
+              m). Suppose you are moving at a speed of
+              <div class="input-field inline"><input id="q3_3" type="text"><label for="text_inline">Input</label></div>
+              m/s. How big would h have to be if your minimum possible energy is equal to your kinetic energy . <span class="redd">(in unit J·s)</span> <br>
+
+              Note: the minimum possible energy is the ground-state energy of the square well.
+              <br><a class="waves-effect waves-light btn" onclick="q3()"><i class="material-icons left">calculate</i>Calc!</a>
+              <a class="waves-effect waves-light btn" onclick="q3(1)"><i class="material-icons left">functions</i>equation</a>
+              <div class="collection"><a id="a3" class="collection-item"></a></div>
+            </div>
+          </span></div>
+        </li>
+
+        <li> <!-- Q4 -->
+          <div class="collapsible-header">35.26</div>
+          <div class="collapsible-body"><span>
+            <div class="question_text">
+              A very crude model for an atomic nucleus is a cubical box
+              <div class="input-field inline"><input id="q4_1" type="text"><label for="text_inline">Input</label></div>
+              fm on a side. What would be the energy of a gamma ray emitted if a proton in such a nucleus made a transition from its first excited state to the ground state? <span class="redd">(in unit MeV)</span> <br>
+              You should use three-dimentioal square well, and the quantum numbers of ground state are $(n_x, n_y, n_z) = (1,1,1)$.
+              
+              Planck constant h = $6.626 \times 10^{-34}$ (J·s)<br>
+              Proton mass $m_p = 1.67 \times 10^{-27}$ (kg)<br>
+              Electron charge e = $1.6 \times 10^{-19}$ (C)
+              <br><a class="waves-effect waves-light btn" onclick="q4()"><i class="material-icons left">calculate</i>Calc!</a>
+              <a class="waves-effect waves-light btn" onclick="q4(1)"><i class="material-icons left">functions</i>equation</a>
+              <div class="collection"><a id="a4" class="collection-item"></a></div>
+            </div>
+          </span></div>
+        </li>
+
+        <li> <!-- Q5 -->
+          <div class="collapsible-header">35.36</div>
+          <div class="collapsible-body"><span>
+            <div class="question_text">
+              Find the value of the normalization constant A for the one-dimentional wave function given by $\psi = 0$ for $|x| > b$ and $\psi = A(b^2-x^2)$ for $-b \le x \le b$, and b=
+              <div class="input-field inline"><input id="q5_1" type="text"><label for="text_inline">Input</label></div>.
+              <br><a class="waves-effect waves-light btn" onclick="q5()"><i class="material-icons left">calculate</i>Calc!</a>
+              <a class="waves-effect waves-light btn" onclick="q5(1)"><i class="material-icons left">functions</i>equation</a>
+              <div class="collection"><a id="a5" class="collection-item"></a></div>
+            </div>
+          </span></div>
+        </li>
+
+        <li> <!-- Q6 -->
+          <div class="collapsible-header">35.43</div>
+          <div class="collapsible-body"><span>
+            <div class="question_text">
+              Electrons in an ensemble of
+              <div class="input-field inline"><input id="q6_1" type="text"><label for="text_inline">Input</label></div>
+              nm wide one-dimentional square wells are all initially in the n =
+              <div class="input-field inline"><input id="q6_2" type="text"><label for="text_inline">Input</label></div>
+              state. Find the shortest wavelength of the spectral lines if the electrons make a transition to the lower states. <span class="redd">(in unit nm)</span> <br>
+              Planck constant h = $6.626 \times 10^{-34}$ (J·s)<br>
+              Electron mass $m_e = 9.11 \times 10^{-31}$ (kg)<br>
+              Speed of light c = $3 \times 10^{8}$ (m/s)
+              <br><a class="waves-effect waves-light btn" onclick="q6()"><i class="material-icons left">calculate</i>Calc!</a>
+              <a class="waves-effect waves-light btn" onclick="q6(1)"><i class="material-icons left">functions</i>equation</a>
+              <div class="collection"><a id="a6" class="collection-item"></a></div>
+            </div>
+          </span></div>
+        </li>
+      </ul>
+    </div>
+    
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" src="ch.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+          let elems = document.querySelectorAll('.collapsible');
+          let instances = M.Collapsible.init(elems, {});
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('.dropdown-trigger');
+          var instances = M.Dropdown.init(elems, { hover: false });
+        });
+
+        const getNum = (id) => {return Number(document.getElementById(id).value);}
+        const setAns = (id, ans) => {document.getElementById(id).innerText = ans;}
+
+        const C = 3 * 10**8;
+        const h = 6.626 * 1e-34;
+
+        const q1 = (eq) => {
+          let c = getNum("q1_3");
+          let ans = "c"
+          setAns("a1", eq ? ans : eval(ans));
+        }
+
+        const q2 = (eq) => {
+          let m_e = 9.11 * 1e-31;
+          let e = 1.6 * 1e-19;
+
+          let a = getNum("q2_1");
+          let ans = "h**2 / (8 * m_e * (a * 1e-9)**2) / e"
+          setAns("a2", eq ? ans : eval(ans));
+        }
+
+        const q3 = (eq) => {
+          let a = getNum("q3_1");
+          let b = getNum("q3_2");
+          let c = getNum("q3_3");
+          let ans = "Math.sqrt((1/2 * a * c**2) * (8 * a * b**2))"
+          setAns("a3", eq ? ans : eval(ans));
+        }
+
+        const q4 = (eq) => {
+          let m_p = 1.67 * 1e-27;
+          let e = 1.6 * 1e-19;
+          let a = getNum("q4_1");
+          let ans = "h**2 / (8 * m_p * (a*1e-15)**2) * (2**2 - 1**2) / (1e6 * e)"
+          setAns("a4", eq ? ans : eval(ans));
+        }
+
+        const q5 = (eq) => {
+          let a = getNum("q5_1");
+          let ans = "Math.sqrt(15/16 / a**5)"
+          setAns("a5", eq ? ans : eval(ans));
+        }
+
+        const q6 = (eq) => {
+          let m_e = 9.11 * 1e-31;
+          let a = getNum("q6_1");
+          let b = getNum("q6_2");
+          let ans = "(8 * C * m_e * (a*1e-9)**2) / ((b**2-1) * h) * 1e9"
+          setAns("a6", eq ? ans : eval(ans));
+        }
+    </script>
+  </body>
+</html>
+
+        

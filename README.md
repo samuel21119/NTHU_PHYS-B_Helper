@@ -20,3 +20,4 @@ Current available chapter:
 - CH. 29
 - CH. 33
 - CH. 34
+- CH. 35
